@@ -2,19 +2,30 @@ import 'dart:convert';
 
 import 'package:study_flutter/model/blueArchive.dart';
 import 'package:http/http.dart' as http;
+import 'dart:developer' as developer;
 
 class BlueArchiveSource {
-  Future<List<Character>> getCharacterList() async {
-    final response = await http
-        .get(Uri.parse("https://api-blue-archive.vercel.app/api/characters"));
+  Future<ResponseBlueArchive> getStudentInfo(int page, int limit) async {
+    final uri = Uri(
+        scheme: "https",
+        host: "api-blue-archive.vercel.app",
+        path: '/api/characters',
+        queryParameters: {
+          "page": page.toString(),
+          "perPage": limit.toString(),
+        });
 
-    final result = jsonDecode(response.body)["data"];
-    final charactersJson = result.cast<Map<String, dynamic>>();
+    final response = await http.get(uri);
 
-    List<Character> characters = charactersJson
-        .map<Character>((json) => Character.fromJson(json))
-        .toList();
+    if (response.statusCode == 200) {
+      final resJson = jsonDecode(response.body);
+      ResponseBlueArchive studentInfo = ResponseBlueArchive.fromJson(resJson);
 
-    return characters;
+      print(studentInfo);
+
+      return studentInfo;
+    } else {
+      throw Exception("학생정보 조회 실패!");
+    }
   }
 }
