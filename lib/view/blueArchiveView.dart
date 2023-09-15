@@ -18,9 +18,7 @@ class _BlueArchiveViewState extends State<BlueArchiveView> {
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("BlueArchive"),
-        ),
+        appBar: AppBar(title: Text("Blue Archive View")),
         body:
             Consumer<BlueArchiveViewModel>(builder: (context, provider, child) {
           characterList = provider.characterList;
