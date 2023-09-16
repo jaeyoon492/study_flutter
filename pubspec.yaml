@@ -40,6 +40,7 @@ dependencies:
     url_launcher: ^6.1.14
     http: ^1.1.0
     walletconnect_flutter_v2: ^2.1.4
+    webview_flutter: ^4.2.4
 
 dev_dependencies:
     flutter_test:

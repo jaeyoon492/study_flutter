@@ -34,6 +34,12 @@ class _ScaffoldWithNavBarState extends State<ScaffoldWithNavBar> {
       initialLocation: '/metamask',
     ),
     MyCustomBottomNavBarItem(
+      icon: Icon(Icons.access_alarms_outlined),
+      activeIcon: Icon(Icons.access_alarm),
+      label: 'Webview',
+      initialLocation: '/webview',
+    ),
+    MyCustomBottomNavBarItem(
       icon: Icon(Icons.explore_outlined),
       activeIcon: Icon(Icons.explore),
       label: 'BlueArchive',

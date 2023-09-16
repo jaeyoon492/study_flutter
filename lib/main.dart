@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:study_flutter/route.dart';
-import 'package:study_flutter/viewModel/blueArchiveViewModel.dart';
+import 'package:study_flutter/viewModel/blue_archive_view_model.dart';
 import 'dart:developer' as developer;
+
+import 'package:study_flutter/viewModel/web_view_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +34,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => BlueArchiveViewModel())
+        ChangeNotifierProvider(create: (context) => BlueArchiveViewModel()),
+        ChangeNotifierProvider(create: (context) => WebViewModel())
       ],
       builder: (context, child) {
         return MaterialApp(

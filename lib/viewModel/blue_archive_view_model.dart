@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/model/blueArchive.dart';
-import 'package:study_flutter/service/blueArchiveRepository.dart';
+import 'package:study_flutter/model/blue_archive.dart';
+import 'package:study_flutter/service/blue_archive_repository.dart';
 import 'dart:developer' as developer;
 
 class BlueArchiveViewModel with ChangeNotifier {

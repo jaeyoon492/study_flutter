@@ -1,5 +1,5 @@
-import 'package:study_flutter/dataSource/blueArchiveSource.dart';
-import 'package:study_flutter/model/blueArchive.dart';
+import 'package:study_flutter/dataSource/blue_archive_source.dart';
+import 'package:study_flutter/model/blue_archive.dart';
 
 class BlueArchiveRepository {
   final BlueArchiveSource _blueArchiveSource = BlueArchiveSource();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:study_flutter/model/blueArchive.dart';
-import 'package:study_flutter/viewModel/blueArchiveViewModel.dart';
+import 'package:study_flutter/model/blue_archive.dart';
+import 'package:study_flutter/viewModel/blue_archive_view_model.dart';
 
 class BlueArchiveView extends StatefulWidget {
   const BlueArchiveView({super.key});

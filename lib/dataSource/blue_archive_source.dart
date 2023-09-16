@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:study_flutter/model/blueArchive.dart';
+import 'package:study_flutter/model/blue_archive.dart';
 import 'package:http/http.dart' as http;
 import 'dart:developer' as developer;
 
