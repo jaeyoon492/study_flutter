@@ -16,7 +16,7 @@ class MetaMaskPage extends HookWidget {
     Web3App wcClient = await Web3App.createInstance(
       relayUrl:
           'wss://relay.walletconnect.com', // The relay websocket URL, leave blank to use the default
-      projectId: '',
+      projectId: '0c446885b2d551cb58df5ff726bca80c',
       metadata: PairingMetadata(
         name: 'dApp (Requester)',
         description: 'A dapp that can request that transactions be signed',

@@ -40,6 +40,12 @@ class _ScaffoldWithNavBarState extends State<ScaffoldWithNavBar> {
       initialLocation: '/webview',
     ),
     MyCustomBottomNavBarItem(
+      icon: Icon(Icons.accessibility_new_outlined),
+      activeIcon: Icon(Icons.accessibility_new),
+      label: 'Webview Provider',
+      initialLocation: '/webview_provider',
+    ),
+    MyCustomBottomNavBarItem(
       icon: Icon(Icons.explore_outlined),
       activeIcon: Icon(Icons.explore),
       label: 'BlueArchive',
