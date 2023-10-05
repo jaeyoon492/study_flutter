@@ -14,8 +14,7 @@ class MetamaskProvider with ChangeNotifier {
   var clientReady = false;
 
   var address;
-  var credentials = EthPrivateKey.fromHex(
-      "9130edb41c56a32e740b50a784b416344ffc79dde1a44a7b1d6f607cd73716bd");
+  var credentials = EthPrivateKey.fromHex("");
 
   MetamaskProvider() {
     // print("init metamask provider");
